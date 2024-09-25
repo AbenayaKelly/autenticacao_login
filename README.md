@@ -36,12 +36,6 @@ Crie o banco de dados .
 ```sql
 CREATE DATABASE db;
 
-USE crud_db;
-
-CREATE TABLE items (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL
-);
 ```
 
 ### 5. Criar a Tabela users
@@ -49,6 +43,7 @@ CREATE TABLE items (
 Crie a tabela.
 
 ```sql
+USE db;
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(255) NOT NULL UNIQUE,
